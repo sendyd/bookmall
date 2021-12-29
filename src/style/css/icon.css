@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2972198 */
+  src: url('//at.alicdn.com/t/font_2972198_m8kif2rlyn.woff2?t=1638151651065') format('woff2'),
+       url('//at.alicdn.com/t/font_2972198_m8kif2rlyn.woff?t=1638151651065') format('woff'),
+       url('//at.alicdn.com/t/font_2972198_m8kif2rlyn.ttf?t=1638151651065') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-phoneiphone:before {
+  content: "\ec93";
+}
+
+.icon-arrow-left:before {
+  content: "\e694";
+}
+
+.icon-arrow-down:before {
+  content: "\e695";
+}
+
+.icon-bars:before {
+  content: "\e697";
+}
+
+.icon-chat-o:before {
+  content: "\e69c";
+}
+
+.icon-cross:before {
+  content: "\e69d";
+}
+
+.icon-delete-o:before {
+  content: "\e69e";
+}
+
+.icon-down:before {
+  content: "\e69f";
+}
+
+.icon-ellipsis:before {
+  content: "\e6a0";
+}
+
+.icon-gem-o:before {
+  content: "\e6a4";
+}
+
+.icon-like-o:before {
+  content: "\e6a8";
+}
+
+.icon-more-o:before {
+  content: "\e6aa";
+}
+
+.icon-minus:before {
+  content: "\e6ab";
+}
+
+.icon-passed:before {
+  content: "\e6ac";
+}
+
+.icon-pause-circle-o:before {
+  content: "\e6ad";
+}
+
+.icon-plus:before {
+  content: "\e6af";
+}
+
+.icon-play:before {
+  content: "\e6b0";
+}
+
+.icon-revoke:before {
+  content: "\e6b1";
+}
+
+.icon-search:before {
+  content: "\e6b2";
+}
+
+.icon-play-circle-o:before {
+  content: "\e6b3";
+}
+
+.icon-question-o:before {
+  content: "\e6b4";
+}
+
+.icon-setting-o:before {
+  content: "\e6b5";
+}
+
+.icon-share-o:before {
+  content: "\e6b6";
+}
+
+.icon-question:before {
+  content: "\e6b7";
+}
+
+.icon-success:before {
+  content: "\e6b8";
+}
+
+.icon-service:before {
+  content: "\e6b9";
+}
+
+.icon-volume-o:before {
+  content: "\e6ba";
+}
+
+.icon-wap-nav:before {
+  content: "\e6bb";
+}
+
+.icon-video-o:before {
+  content: "\e6bc";
+}
+
+.icon-weapp-nav:before {
+  content: "\e6bd";
+}
+
+.icon-volume:before {
+  content: "\e6be";
+}
+
+.icon-wechat:before {
+  content: "\e6bf";
+}
