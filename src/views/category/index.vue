@@ -48,7 +48,7 @@ const init = () => {
     ...state.list[value2.value]
   }
   getCategory(params).then(res => {
-    console.log(res);
+    // console.log(res);
     state.menus = res.categories
     state.goodlist = res.goods.data
   })
@@ -88,6 +88,7 @@ const onLoad = () => {
   <div class="category">
     <div class="mian">
       <div class="cate">
+        <van-sticky :offset-top="96">
         <van-sidebar v-model="active">
           <van-collapse v-model="activeNames">
             <van-collapse-item
@@ -105,6 +106,7 @@ const onLoad = () => {
             </van-collapse-item>
           </van-collapse>
         </van-sidebar>
+        </van-sticky>
       </div>
       <div class="right">
         <van-dropdown-menu active-color="#1989fa">
@@ -139,16 +141,29 @@ const onLoad = () => {
   </div>
 </template>
 <style scoped lang='less'>
+
 .mian {
+  //  position: fixed;
   display: flex;
+  margin-bottom: 50px;
+  // position: fixed;
   .cate {
+    
+    // overflow: hidden;
     margin-top: 48px;
+    height: 200px;
+    z-index: inherit;
     .van-sidebar {
       width: 140px;
+      // position: sticky;
+      // top: 48px;
+      
     }
   }
   .right {
-    width: 100%;
+    // width: 100%;
+    flex: 1;
+    overflow: hidden;
     .van-dropdown-menu {
       width: 100%;
       .van-dropdown-item {
@@ -159,6 +174,7 @@ const onLoad = () => {
 }
 .category {
   margin-top: 46px;
+  overflow: hidden;
   .list{
     width: 100%;
     height: 100vh;

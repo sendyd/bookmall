@@ -27,7 +27,7 @@ const state = reactive({
   order: { address: [], carts: [] }
 })
 const onSubmit = () => {
-  console.log('sub');
+  // console.log('sub');
   if (state.order.address.length === 0) {
     Toast.fail('请先填写地址');
   }

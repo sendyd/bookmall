@@ -10,7 +10,7 @@ const router = useRouter()
 
 
 const onSave = (val) => {
-  console.log(val);
+  // console.log(val);
   const params = {
     name: val.name,
     address: val.addressDetail,

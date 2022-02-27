@@ -20,7 +20,7 @@ const onSubmit = () => {
   router.push('/order/view')
 }
 const handleAllCheck = (el) => {
-  console.log(store.getters.allChecked);
+  // console.log(store.getters.allChecked);
   store.dispatch('updateChecked', store.getters.allChecked)
 }
 const cart = computed(() => {
@@ -28,7 +28,7 @@ const cart = computed(() => {
 })
 const onClickDelete = () => {
   delCartData(cart.value.id).then(res => {
-    console.log(res);
+    // console.log(res);
     if (res.status == 204) return Toast.success('删除商品成功')
   })
 }

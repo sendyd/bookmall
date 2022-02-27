@@ -43,7 +43,7 @@ export function request(config) {
 
     return response.data ? response.data : response
   }, error => {
-    console.log(error.response);
+    // console.log(error.response);
     switch (error.response.status ? error.response.status : '') {
       case 401:
         Toast.fail('前往登录')

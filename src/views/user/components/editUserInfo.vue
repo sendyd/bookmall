@@ -25,7 +25,7 @@ const state = reactive({
 })
 const handleConfirm = () => {
   setUserInfo({ name: state.nickname }).then(res => {
-    console.log(res);
+    // console.log(res);
     if (res.status === 204) return Toast.success('修改用户名成功')
   })
 }

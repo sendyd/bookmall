@@ -12,7 +12,7 @@ init()
 })
 const init = () => {
   getCode(route.query.id , {type:'aliyun'}).then(res=>{
-    console.log(res);
+    // console.log(res);
     state.imgUrl = res.qr_code_url
   })
   getPayStatus(route.query.id).then(res=>{

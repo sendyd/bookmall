@@ -13,7 +13,7 @@ onMounted(() => {
 })
 const init = () => {
   getAddressInfo(route.query.id).then(res => {
-    console.log(res);
+    // console.log(res);
     state.addressInfo.name = res.name
     state.addressInfo.tel = res.phone
     state.addressInfo.province = res.province
@@ -40,7 +40,7 @@ const state = reactive({
   }
 })
 const onSave = (val) => {
-  console.log(val);
+  // console.log(val);
   const params = {
     name:val.name,
     address:val.addressDetail ,
@@ -51,7 +51,7 @@ const onSave = (val) => {
     is_default:val.isDefault? 1:0,
   }
   editAddressInfo(route.query.id , params).then(res=>{
-    console.log(res);
+    // console.log(res);
     if(res.status === 204) {
       Toast.success('编辑地址成功')
       router.go(-1)

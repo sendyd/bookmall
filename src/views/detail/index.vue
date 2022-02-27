@@ -14,7 +14,7 @@ onMounted(() => {
 })
 const init = () => {
   getGoodDetail(route.query.id).then(res => {
-    console.log(res);
+    // console.log(res);
     state.data = res.goods
     state.goods = res.like_goods
     state.is_collect = res.goods.is_collect === 1 ? true :false
@@ -143,6 +143,7 @@ const addCart = () => {
   margin-top: 50px;
 }
 .detail {
+  overflow: hidden;
   background-color: #f2f2f2;
 }
 .card {
